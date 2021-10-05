@@ -1,0 +1,154 @@
+{
+  "outputBus" : 64,
+  "parser" : {
+  },
+  "control" : {
+  },
+  "deparser" : {
+    "name" : "MyDeparser",
+    "PHV" : {
+      "ethernet" : 112,
+      "tunnel" : 32,
+      "ipv4" : 160,
+      "tcp" : 160
+    },
+    "startState" : "<start>",
+    "lastState" : "<end>",
+    "graph" : {
+      "nodes" : [
+        {
+          "id" : "<start>"
+        },
+        {
+          "id" : "ethernet_0_112",
+          "HdrName" : ["ethernet"],
+          "HdrPos" : [0],
+          "HdrLen" : [112]
+        },
+        {
+          "id" : "tunnel_0_32",
+          "HdrName" : ["tunnel"],
+          "HdrPos" : [0],
+          "HdrLen" : [32]
+        },
+        {
+          "id" : "ipv4_0_160",
+          "HdrName" : ["ipv4"],
+          "HdrPos" : [0],
+          "HdrLen" : [160]
+        },
+        {
+          "id" : "tcp_0_160",
+          "HdrName" : ["tcp"],
+          "HdrPos" : [0],
+          "HdrLen" : [160]
+        },
+        {
+          "id" : "<end>"
+        }
+      ],
+      "links" : [
+        {
+          "source" : "<start>",
+          "target" : "ethernet_0_112",
+          "label" : "0 : PHV.ethernet.isValid",
+          "priority" : 0,
+          "condition" : "PHV.ethernet.isValid"
+        },
+        {
+          "source" : "ethernet_0_112",
+          "target" : "tunnel_0_32",
+          "label" : "0 : PHV.tunnel.isValid",
+          "priority" : 0,
+          "condition" : "PHV.tunnel.isValid"
+        },
+        {
+          "source" : "tunnel_0_32",
+          "target" : "ipv4_0_160",
+          "label" : "0 : PHV.ipv4.isValid",
+          "priority" : 0,
+          "condition" : "PHV.ipv4.isValid"
+        },
+        {
+          "source" : "ipv4_0_160",
+          "target" : "tcp_0_160",
+          "label" : "0 : PHV.tcp.isValid",
+          "priority" : 0,
+          "condition" : "PHV.tcp.isValid"
+        },
+        {
+          "source" : "tunnel_0_32",
+          "target" : "tcp_0_160",
+          "label" : "1 : PHV.tcp.isValid",
+          "priority" : 1,
+          "condition" : "PHV.tcp.isValid"
+        },
+        {
+          "source" : "ethernet_0_112",
+          "target" : "ipv4_0_160",
+          "label" : "2 : PHV.ipv4.isValid",
+          "priority" : 2,
+          "condition" : "PHV.ipv4.isValid"
+        },
+        {
+          "source" : "ethernet_0_112",
+          "target" : "tcp_0_160",
+          "label" : "3 : PHV.tcp.isValid",
+          "priority" : 3,
+          "condition" : "PHV.tcp.isValid"
+        },
+        {
+          "source" : "<start>",
+          "target" : "tunnel_0_32",
+          "label" : "4 : PHV.tunnel.isValid",
+          "priority" : 4,
+          "condition" : "PHV.tunnel.isValid"
+        },
+        {
+          "source" : "<start>",
+          "target" : "ipv4_0_160",
+          "label" : "6 : PHV.ipv4.isValid",
+          "priority" : 6,
+          "condition" : "PHV.ipv4.isValid"
+        },
+        {
+          "source" : "<start>",
+          "target" : "tcp_0_160",
+          "label" : "7 : PHV.tcp.isValid",
+          "priority" : 7,
+          "condition" : "PHV.tcp.isValid"
+        },
+        {
+          "source" : "tcp_0_160",
+          "target" : "<end>",
+          "label" : "8",
+          "priority" : 8
+        },
+        {
+          "source" : "<start>",
+          "target" : "<end>",
+          "label" : "8",
+          "priority" : 8
+        },
+        {
+          "source" : "ipv4_0_160",
+          "target" : "<end>",
+          "label" : "8",
+          "priority" : 8
+        },
+        {
+          "source" : "tunnel_0_32",
+          "target" : "<end>",
+          "label" : "8",
+          "priority" : 8
+        },
+        {
+          "source" : "ethernet_0_112",
+          "target" : "<end>",
+          "label" : "8",
+          "priority" : 8
+        }
+      ]
+    }
+  }
+}

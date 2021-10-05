@@ -1,0 +1,202 @@
+{
+  "outputBus" : 64,
+  "parser" : {
+  },
+  "control" : {
+  },
+  "deparser" : {
+    "name" : "MyDeparser",
+    "PHV" : {
+      "ethernet" : 112,
+      "ipv4" : 160,
+      "ipv6" : 320,
+      "udp" : 64,
+      "tcp" : 160
+    },
+    "startState" : "<start>",
+    "lastState" : "<end>",
+    "graph" : {
+      "nodes" : [
+        {
+          "id" : "<start>"
+        },
+        {
+          "id" : "ethernet_0_112",
+          "HdrName" : ["ethernet"],
+          "HdrPos" : [0],
+          "HdrLen" : [112]
+        },
+        {
+          "id" : "ipv4_0_160",
+          "HdrName" : ["ipv4"],
+          "HdrPos" : [0],
+          "HdrLen" : [160]
+        },
+        {
+          "id" : "ipv6_0_320",
+          "HdrName" : ["ipv6"],
+          "HdrPos" : [0],
+          "HdrLen" : [320]
+        },
+        {
+          "id" : "tcp_0_160",
+          "HdrName" : ["tcp"],
+          "HdrPos" : [0],
+          "HdrLen" : [160]
+        },
+        {
+          "id" : "udp_0_64",
+          "HdrName" : ["udp"],
+          "HdrPos" : [0],
+          "HdrLen" : [64]
+        },
+        {
+          "id" : "<end>"
+        }
+      ],
+      "links" : [
+        {
+          "source" : "<start>",
+          "target" : "ethernet_0_112",
+          "label" : "0 : hdr.ethernet.isValid",
+          "priority" : 0,
+          "condition" : "hdr.ethernet.isValid"
+        },
+        {
+          "source" : "ethernet_0_112",
+          "target" : "ipv4_0_160",
+          "label" : "0 : hdr.ipv4.isValid",
+          "priority" : 0,
+          "condition" : "hdr.ipv4.isValid"
+        },
+        {
+          "source" : "ipv4_0_160",
+          "target" : "ipv6_0_320",
+          "label" : "0 : hdr.ipv6.isValid",
+          "priority" : 0,
+          "condition" : "hdr.ipv6.isValid"
+        },
+        {
+          "source" : "ipv6_0_320",
+          "target" : "tcp_0_160",
+          "label" : "0 : hdr.tcp.isValid",
+          "priority" : 0,
+          "condition" : "hdr.tcp.isValid"
+        },
+        {
+          "source" : "tcp_0_160",
+          "target" : "udp_0_64",
+          "label" : "0 : hdr.udp.isValid",
+          "priority" : 0,
+          "condition" : "hdr.udp.isValid"
+        },
+        {
+          "source" : "ipv6_0_320",
+          "target" : "udp_0_64",
+          "label" : "1 : hdr.udp.isValid",
+          "priority" : 1,
+          "condition" : "hdr.udp.isValid"
+        },
+        {
+          "source" : "ipv4_0_160",
+          "target" : "tcp_0_160",
+          "label" : "2 : hdr.tcp.isValid",
+          "priority" : 2,
+          "condition" : "hdr.tcp.isValid"
+        },
+        {
+          "source" : "ipv4_0_160",
+          "target" : "udp_0_64",
+          "label" : "3 : hdr.udp.isValid",
+          "priority" : 3,
+          "condition" : "hdr.udp.isValid"
+        },
+        {
+          "source" : "ethernet_0_112",
+          "target" : "ipv6_0_320",
+          "label" : "4 : hdr.ipv6.isValid",
+          "priority" : 4,
+          "condition" : "hdr.ipv6.isValid"
+        },
+        {
+          "source" : "ethernet_0_112",
+          "target" : "tcp_0_160",
+          "label" : "6 : hdr.tcp.isValid",
+          "priority" : 6,
+          "condition" : "hdr.tcp.isValid"
+        },
+        {
+          "source" : "ethernet_0_112",
+          "target" : "udp_0_64",
+          "label" : "7 : hdr.udp.isValid",
+          "priority" : 7,
+          "condition" : "hdr.udp.isValid"
+        },
+        {
+          "source" : "<start>",
+          "target" : "ipv4_0_160",
+          "label" : "8 : hdr.ipv4.isValid",
+          "priority" : 8,
+          "condition" : "hdr.ipv4.isValid"
+        },
+        {
+          "source" : "<start>",
+          "target" : "ipv6_0_320",
+          "label" : "12 : hdr.ipv6.isValid",
+          "priority" : 12,
+          "condition" : "hdr.ipv6.isValid"
+        },
+        {
+          "source" : "<start>",
+          "target" : "tcp_0_160",
+          "label" : "14 : hdr.tcp.isValid",
+          "priority" : 14,
+          "condition" : "hdr.tcp.isValid"
+        },
+        {
+          "source" : "<start>",
+          "target" : "udp_0_64",
+          "label" : "15 : hdr.udp.isValid",
+          "priority" : 15,
+          "condition" : "hdr.udp.isValid"
+        },
+        {
+          "source" : "udp_0_64",
+          "target" : "<end>",
+          "label" : "16",
+          "priority" : 16
+        },
+        {
+          "source" : "<start>",
+          "target" : "<end>",
+          "label" : "16",
+          "priority" : 16
+        },
+        {
+          "source" : "tcp_0_160",
+          "target" : "<end>",
+          "label" : "16",
+          "priority" : 16
+        },
+        {
+          "source" : "ipv6_0_320",
+          "target" : "<end>",
+          "label" : "16",
+          "priority" : 16
+        },
+        {
+          "source" : "ipv4_0_160",
+          "target" : "<end>",
+          "label" : "16",
+          "priority" : 16
+        },
+        {
+          "source" : "ethernet_0_112",
+          "target" : "<end>",
+          "label" : "16",
+          "priority" : 16
+        }
+      ]
+    }
+  }
+}
