@@ -1,0 +1,45 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Tue Oct  5 14:54:40 2021
+| Host         : pcpl01 running 64-bit Scientific Linux release 7.9 (Nitrogen)
+| Command      : report_utilization -hierarchical -file /export/tmp/luinaud/p4c/backends/p4fpga/vhdl_gen/../test/paper_res/resultsImpl/T3/post_synth_util_hier.rpt
+| Design       : top
+| Device       : xcvu3pffvc1517-3
+| Design State : Synthesized
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++----------------------+-------------------+------------+------------+---------+------+------+--------+--------+------+------------+
+|       Instance       |       Module      | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | URAM | DSP Blocks |
++----------------------+-------------------+------------+------------+---------+------+------+--------+--------+------+------------+
+| top                  |             (top) |       1125 |       1125 |       0 |    0 | 1406 |      0 |      2 |    0 |          0 |
+|   (top)              |             (top) |         75 |         75 |       0 |    0 | 1034 |      0 |      0 |    0 |          0 |
+|   dep                |        MyDeparser |       1050 |       1050 |       0 |    0 |  372 |      0 |      2 |    0 |          0 |
+|     (dep)            |        MyDeparser |         79 |         79 |       0 |    0 |  230 |      0 |      2 |    0 |          0 |
+|     payloadShifter_0 |   payload_shifter |         19 |         19 |       0 |    0 |    9 |      0 |      0 |    0 |          0 |
+|     payloadShifter_1 | payload_shifter_0 |         19 |         19 |       0 |    0 |    9 |      0 |      0 |    0 |          0 |
+|     payloadShifter_2 | payload_shifter_1 |         19 |         19 |       0 |    0 |    9 |      0 |      0 |    0 |          0 |
+|     payloadShifter_3 | payload_shifter_2 |         19 |         19 |       0 |    0 |    9 |      0 |      0 |    0 |          0 |
+|     payloadShifter_4 | payload_shifter_3 |         19 |         19 |       0 |    0 |    9 |      0 |      0 |    0 |          0 |
+|     payloadShifter_5 | payload_shifter_4 |         19 |         19 |       0 |    0 |    9 |      0 |      0 |    0 |          0 |
+|     stM_0            |   state_machine_0 |        110 |        110 |       0 |    0 |   11 |      0 |      0 |    0 |          0 |
+|     stM_1            |   state_machine_1 |        113 |        113 |       0 |    0 |   11 |      0 |      0 |    0 |          0 |
+|     stM_2            |   state_machine_2 |        105 |        105 |       0 |    0 |   11 |      0 |      0 |    0 |          0 |
+|     stM_3            |   state_machine_3 |        102 |        102 |       0 |    0 |   11 |      0 |      0 |    0 |          0 |
+|     stM_4            |   state_machine_4 |         99 |         99 |       0 |    0 |   11 |      0 |      0 |    0 |          0 |
+|     stM_5            |   state_machine_5 |        102 |        102 |       0 |    0 |   11 |      0 |      0 |    0 |          0 |
+|     stM_6            |   state_machine_6 |        112 |        112 |       0 |    0 |   11 |      0 |      0 |    0 |          0 |
+|     stM_7            |   state_machine_7 |        114 |        114 |       0 |    0 |   11 |      0 |      0 |    0 |          0 |
+|   eth_10G_i          |           eth_10G |          0 |          0 |       0 |    0 |    0 |      0 |      0 |    0 |          0 |
++----------------------+-------------------+------------+------------+---------+------+------+--------+--------+------+------------+
+
+
