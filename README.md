@@ -10,3 +10,4 @@ otherwise, optimized deparser graph
 ## exportDepJsonToDot : generate dot files.
 --help for more info, can count edges, paths and nodes in jsons. take jsons as input or a folder of json. outputs dot files. print info if asked.
 
+`Dot` files can be read using `xdot` application
