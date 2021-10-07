@@ -1,0 +1,115 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Thu Oct  7 10:47:43 2021
+| Host         : pcpl01 running 64-bit Scientific Linux release 7.9 (Nitrogen)
+| Command      : report_utilization -hierarchical -file /export/tmp/luinaud/P4CompilerOptimizationTest/vivado_result/bus_256/optimized/T0/post_synth_util_hier.rpt
+| Design       : top
+| Device       : xcvu3pffvc1517-3
+| Design State : Synthesized
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++-----------------------+------------------------+------------+------------+---------+------+------+--------+--------+------+------------+
+|        Instance       |         Module         | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | URAM | DSP Blocks |
++-----------------------+------------------------+------------+------------+---------+------+------+--------+--------+------+------------+
+| top                   |                  (top) |       1875 |       1875 |       0 |    0 | 2112 |      0 |      0 |    0 |          0 |
+|   (top)               |                  (top) |        459 |        459 |       0 |    0 |  796 |      0 |      0 |    0 |          0 |
+|   dep                 |             MyDeparser |       1416 |       1416 |       0 |    0 | 1316 |      0 |      0 |    0 |          0 |
+|     (dep)             |             MyDeparser |        278 |        278 |       0 |    0 |  894 |      0 |      0 |    0 |          0 |
+|     mux_0             |                    mux |          8 |          8 |       0 |    0 |    0 |      0 |      0 |    0 |          0 |
+|     mux_1             |                  mux_0 |          8 |          8 |       0 |    0 |    0 |      0 |      0 |    0 |          0 |
+|     mux_10            |                  mux_1 |          8 |          8 |       0 |    0 |    0 |      0 |      0 |    0 |          0 |
+|     mux_11            |                  mux_2 |          8 |          8 |       0 |    0 |    0 |      0 |      0 |    0 |          0 |
+|     mux_12            |                  mux_3 |          8 |          8 |       0 |    0 |    0 |      0 |      0 |    0 |          0 |
+|     mux_13            |                  mux_4 |          8 |          8 |       0 |    0 |    0 |      0 |      0 |    0 |          0 |
+|     mux_14            |    mux__parameterized0 |          8 |          8 |       0 |    0 |    0 |      0 |      0 |    0 |          0 |
+|     mux_15            |  mux__parameterized0_5 |          8 |          8 |       0 |    0 |    0 |      0 |      0 |    0 |          0 |
+|     mux_16            |  mux__parameterized0_6 |          8 |          8 |       0 |    0 |    0 |      0 |      0 |    0 |          0 |
+|     mux_17            |  mux__parameterized0_7 |          8 |          8 |       0 |    0 |    0 |      0 |      0 |    0 |          0 |
+|     mux_18            |  mux__parameterized0_8 |          8 |          8 |       0 |    0 |    0 |      0 |      0 |    0 |          0 |
+|     mux_19            |  mux__parameterized0_9 |          8 |          8 |       0 |    0 |    0 |      0 |      0 |    0 |          0 |
+|     mux_2             |                 mux_10 |          8 |          8 |       0 |    0 |    0 |      0 |      0 |    0 |          0 |
+|     mux_20            | mux__parameterized0_11 |          8 |          8 |       0 |    0 |    0 |      0 |      0 |    0 |          0 |
+|     mux_21            | mux__parameterized0_12 |          8 |          8 |       0 |    0 |    0 |      0 |      0 |    0 |          0 |
+|     mux_22            |                 mux_13 |          8 |          8 |       0 |    0 |    0 |      0 |      0 |    0 |          0 |
+|     mux_23            |                 mux_14 |          8 |          8 |       0 |    0 |    0 |      0 |      0 |    0 |          0 |
+|     mux_24            |                 mux_15 |          8 |          8 |       0 |    0 |    0 |      0 |      0 |    0 |          0 |
+|     mux_25            |                 mux_16 |          8 |          8 |       0 |    0 |    0 |      0 |      0 |    0 |          0 |
+|     mux_3             |                 mux_17 |          8 |          8 |       0 |    0 |    0 |      0 |      0 |    0 |          0 |
+|     mux_4             |                 mux_18 |          8 |          8 |       0 |    0 |    0 |      0 |      0 |    0 |          0 |
+|     mux_5             |                 mux_19 |          8 |          8 |       0 |    0 |    0 |      0 |      0 |    0 |          0 |
+|     mux_6             |                 mux_20 |          8 |          8 |       0 |    0 |    0 |      0 |      0 |    0 |          0 |
+|     mux_7             |                 mux_21 |          8 |          8 |       0 |    0 |    0 |      0 |      0 |    0 |          0 |
+|     mux_8             |                 mux_22 |          8 |          8 |       0 |    0 |    0 |      0 |      0 |    0 |          0 |
+|     mux_9             |                 mux_23 |          8 |          8 |       0 |    0 |    0 |      0 |      0 |    0 |          0 |
+|     payloadShifter_0  |        payload_shifter |         51 |         51 |       0 |    0 |    9 |      0 |      0 |    0 |          0 |
+|     payloadShifter_1  |     payload_shifter_24 |         36 |         36 |       0 |    0 |    9 |      0 |      0 |    0 |          0 |
+|     payloadShifter_10 |     payload_shifter_25 |         34 |         34 |       0 |    0 |    9 |      0 |      0 |    0 |          0 |
+|     payloadShifter_11 |     payload_shifter_26 |         50 |         50 |       0 |    0 |    9 |      0 |      0 |    0 |          0 |
+|     payloadShifter_12 |     payload_shifter_27 |         52 |         52 |       0 |    0 |    9 |      0 |      0 |    0 |          0 |
+|     payloadShifter_13 |     payload_shifter_28 |         52 |         52 |       0 |    0 |    9 |      0 |      0 |    0 |          0 |
+|     payloadShifter_14 |     payload_shifter_29 |         18 |         18 |       0 |    0 |    9 |      0 |      0 |    0 |          0 |
+|     payloadShifter_15 |     payload_shifter_30 |         52 |         52 |       0 |    0 |    9 |      0 |      0 |    0 |          0 |
+|     payloadShifter_16 |     payload_shifter_31 |         19 |         19 |       0 |    0 |    9 |      0 |      0 |    0 |          0 |
+|     payloadShifter_17 |     payload_shifter_32 |         19 |         19 |       0 |    0 |    9 |      0 |      0 |    0 |          0 |
+|     payloadShifter_18 |     payload_shifter_33 |         34 |         34 |       0 |    0 |    9 |      0 |      0 |    0 |          0 |
+|     payloadShifter_19 |     payload_shifter_34 |         18 |         18 |       0 |    0 |    9 |      0 |      0 |    0 |          0 |
+|     payloadShifter_2  |     payload_shifter_35 |         18 |         18 |       0 |    0 |    9 |      0 |      0 |    0 |          0 |
+|     payloadShifter_20 |     payload_shifter_36 |         18 |         18 |       0 |    0 |    9 |      0 |      0 |    0 |          0 |
+|     payloadShifter_21 |     payload_shifter_37 |         18 |         18 |       0 |    0 |    9 |      0 |      0 |    0 |          0 |
+|     payloadShifter_22 |     payload_shifter_38 |         34 |         34 |       0 |    0 |    9 |      0 |      0 |    0 |          0 |
+|     payloadShifter_23 |     payload_shifter_39 |         18 |         18 |       0 |    0 |    9 |      0 |      0 |    0 |          0 |
+|     payloadShifter_24 |     payload_shifter_40 |         50 |         50 |       0 |    0 |    9 |      0 |      0 |    0 |          0 |
+|     payloadShifter_25 |     payload_shifter_41 |         50 |         50 |       0 |    0 |    9 |      0 |      0 |    0 |          0 |
+|     payloadShifter_3  |     payload_shifter_42 |         18 |         18 |       0 |    0 |    9 |      0 |      0 |    0 |          0 |
+|     payloadShifter_4  |     payload_shifter_43 |         18 |         18 |       0 |    0 |    9 |      0 |      0 |    0 |          0 |
+|     payloadShifter_5  |     payload_shifter_44 |         18 |         18 |       0 |    0 |    9 |      0 |      0 |    0 |          0 |
+|     payloadShifter_6  |     payload_shifter_45 |         18 |         18 |       0 |    0 |    9 |      0 |      0 |    0 |          0 |
+|     payloadShifter_7  |     payload_shifter_46 |         18 |         18 |       0 |    0 |    9 |      0 |      0 |    0 |          0 |
+|     payloadShifter_8  |     payload_shifter_47 |         18 |         18 |       0 |    0 |    9 |      0 |      0 |    0 |          0 |
+|     payloadShifter_9  |     payload_shifter_48 |         18 |         18 |       0 |    0 |    9 |      0 |      0 |    0 |          0 |
+|     stM_0             |        state_machine_0 |          4 |          4 |       0 |    0 |    6 |      0 |      0 |    0 |          0 |
+|     stM_1             |        state_machine_1 |          4 |          4 |       0 |    0 |    6 |      0 |      0 |    0 |          0 |
+|     stM_10            |       state_machine_10 |          6 |          6 |       0 |    0 |    6 |      0 |      0 |    0 |          0 |
+|     stM_11            |       state_machine_11 |          4 |          4 |       0 |    0 |    6 |      0 |      0 |    0 |          0 |
+|     stM_12            |       state_machine_12 |          4 |          4 |       0 |    0 |    6 |      0 |      0 |    0 |          0 |
+|     stM_13            |       state_machine_13 |          6 |          6 |       0 |    0 |    6 |      0 |      0 |    0 |          0 |
+|     stM_14            |       state_machine_14 |          9 |          9 |       0 |    0 |    6 |      0 |      0 |    0 |          0 |
+|     stM_15            |       state_machine_15 |          8 |          8 |       0 |    0 |    6 |      0 |      0 |    0 |          0 |
+|     stM_16            |       state_machine_16 |          8 |          8 |       0 |    0 |    6 |      0 |      0 |    0 |          0 |
+|     stM_17            |       state_machine_17 |          8 |          8 |       0 |    0 |    6 |      0 |      0 |    0 |          0 |
+|     stM_18            |       state_machine_18 |          5 |          5 |       0 |    0 |    6 |      0 |      0 |    0 |          0 |
+|     stM_19            |       state_machine_19 |          5 |          5 |       0 |    0 |    6 |      0 |      0 |    0 |          0 |
+|     stM_2             |        state_machine_2 |          5 |          5 |       0 |    0 |    8 |      0 |      0 |    0 |          0 |
+|     stM_20            |       state_machine_20 |          5 |          5 |       0 |    0 |    6 |      0 |      0 |    0 |          0 |
+|     stM_21            |       state_machine_21 |          5 |          5 |       0 |    0 |    6 |      0 |      0 |    0 |          0 |
+|     stM_22            |       state_machine_22 |          7 |          7 |       0 |    0 |    6 |      0 |      0 |    0 |          0 |
+|     stM_23            |       state_machine_23 |          6 |          6 |       0 |    0 |    6 |      0 |      0 |    0 |          0 |
+|     stM_24            |       state_machine_24 |          5 |          5 |       0 |    0 |    6 |      0 |      0 |    0 |          0 |
+|     stM_25            |       state_machine_25 |          5 |          5 |       0 |    0 |    6 |      0 |      0 |    0 |          0 |
+|     stM_26            |       state_machine_26 |          3 |          3 |       0 |    0 |    4 |      0 |      0 |    0 |          0 |
+|     stM_27            |       state_machine_27 |          3 |          3 |       0 |    0 |    4 |      0 |      0 |    0 |          0 |
+|     stM_28            |       state_machine_28 |          4 |          4 |       0 |    0 |    4 |      0 |      0 |    0 |          0 |
+|     stM_29            |       state_machine_29 |          3 |          3 |       0 |    0 |    4 |      0 |      0 |    0 |          0 |
+|     stM_3             |        state_machine_3 |          5 |          5 |       0 |    0 |    8 |      0 |      0 |    0 |          0 |
+|     stM_30            |       state_machine_30 |          3 |          3 |       0 |    0 |    4 |      0 |      0 |    0 |          0 |
+|     stM_31            |       state_machine_31 |          3 |          3 |       0 |    0 |    4 |      0 |      0 |    0 |          0 |
+|     stM_4             |        state_machine_4 |          7 |          7 |       0 |    0 |    8 |      0 |      0 |    0 |          0 |
+|     stM_5             |        state_machine_5 |          6 |          6 |       0 |    0 |    8 |      0 |      0 |    0 |          0 |
+|     stM_6             |        state_machine_6 |          4 |          4 |       0 |    0 |    6 |      0 |      0 |    0 |          0 |
+|     stM_7             |        state_machine_7 |          5 |          5 |       0 |    0 |    6 |      0 |      0 |    0 |          0 |
+|     stM_8             |        state_machine_8 |          4 |          4 |       0 |    0 |    6 |      0 |      0 |    0 |          0 |
+|     stM_9             |        state_machine_9 |          4 |          4 |       0 |    0 |    6 |      0 |      0 |    0 |          0 |
+|   eth_10G_i           |                eth_10G |          0 |          0 |       0 |    0 |    0 |      0 |      0 |    0 |          0 |
++-----------------------+------------------------+------------+------------+---------+------+------+--------+--------+------+------------+
+
+

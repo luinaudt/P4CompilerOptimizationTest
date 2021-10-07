@@ -1,0 +1,16 @@
+bus_64/optimized/T3/post_synth_util_hier.rpt:|       Instance       |       Module      | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | URAM | DSP Blocks |
+bus_64/optimized/T0/post_synth_util_hier.rpt:|   dep                |        MyDeparser |        491 |        491 |       0 |    0 | 394 |      0 |      0 |    0 |          0 |
+bus_64/optimized/T1/post_synth_util_hier.rpt:|   dep                |        MyDeparser |        626 |        626 |       0 |    0 |  472 |      0 |      0 |    0 |          0 |
+bus_64/optimized/T2/post_synth_util_hier.rpt:|   dep                |        MyDeparser |        731 |        731 |       0 |    0 |  486 |      0 |      0 |    0 |          0 |
+bus_64/optimized/T3/post_synth_util_hier.rpt:|   dep                |        MyDeparser |       1050 |       1050 |       0 |    0 |  372 |      0 |      2 |    0 |          0 |
+bus_64/optimized/T4/post_synth_util_hier.rpt:|   dep                |        MyDeparser |       1323 |       1323 |       0 |    0 |  371 |      0 |      7 |    0 |          0 |
+bus_64/optimized/T5/post_synth_util_hier.rpt:|   dep                |        MyDeparser |       1168 |       1168 |       0 |    0 |  374 |      0 |      0 |    0 |          0 |
+bus_64/optimized/T6/post_synth_util_hier.rpt:|   dep                |        MyDeparser |       1130 |       1130 |       0 |    0 |  373 |      0 |      0 |    0 |          0 |
+bus_64/not_optimized/T3/post_synth_util_hier.rpt:|         Instance     |         Module         | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | URAM | DSP Blocks |
+bus_64/not_optimized/T0/post_synth_util_hier.rpt:|   dep                |        MyDeparser |        870 |        870 |       0 |    0 | 441 |      0 |      0 |    0 |          0 |
+bus_64/not_optimized/T1/post_synth_util_hier.rpt:|   dep                |        MyDeparser |       1484 |       1484 |       0 |    0 |  393 |      0 |      0 |    0 |          0 |
+bus_64/not_optimized/T2/post_synth_util_hier.rpt:|   dep                |        MyDeparser |       1743 |       1743 |       0 |    0 |  393 |      0 |      0 |    0 |          0 |
+bus_64/not_optimized/T3/post_synth_util_hier.rpt:|   dep                |        MyDeparser |       2571 |       2571 |       0 |    0 |  396 |      0 |      7 |    0 |          0 |
+bus_64/not_optimized/T4/post_synth_util_hier.rpt:|   dep                |        MyDeparser |       2556 |       2556 |       0 |    0 |  403 |      0 |      8 |    0 |          0 |
+bus_64/not_optimized/T5/post_synth_util_hier.rpt:|   dep                |        MyDeparser |       2556 |       2556 |       0 |    0 |  403 |      0 |      8 |    0 |          0 |
+bus_64/not_optimized/T6/post_synth_util_hier.rpt:|   dep                |        MyDeparser |       2556 |       2556 |       0 |    0 |  403 |      0 |      8 |    0 |          0 |
